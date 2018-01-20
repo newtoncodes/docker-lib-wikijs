@@ -7,6 +7,8 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN mkdir /wiki
 RUN cd /wiki && curl -sSo- https://wiki.js.org/install.sh | bash
 
+WORKDIR /wiki
+COPY config.yml /wiki/config.yml
 
 COPY entrypoint.sh /usr/bin/entrypoint
 RUN chmod +x /usr/bin/entrypoint
