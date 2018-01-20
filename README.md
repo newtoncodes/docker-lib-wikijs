@@ -1,2 +1,3 @@
-# docker-lib-wikijs
-Docker wiki.js image based on ubuntu.
+# Wiki.js on ubuntu docker image
+
+Basic Wiki.js image, no additional functionality. 
